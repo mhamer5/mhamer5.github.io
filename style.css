@@ -1,11 +1,9 @@
 .wrapper {
-    margin: 0 auto;
-    width: 1000px;
-}
+    width: min(100%, 100px)
+    }
 
 .banner-cnp {
-    width: 1000px;
-
+    width: 100%;
 }
 
 h1 {
