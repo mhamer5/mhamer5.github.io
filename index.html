@@ -1,212 +1,179 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Matt Hamer's webpage">
-    <title>Matt Hamer</title>
-    <link rel="stylesheet" href="style.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Your Name - CV</title>
+  <style>
+    /* Basic styling for the entire page */
+    body {
+      font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; /* Sets a clean, readable font */
+      margin: 0; /* Remove default margin around the page */
+      padding: 0; /* Remove default padding */
+      line-height: 1.6; /* Improves readability with line spacing */
+      background-color: #f4f4f4; /* Light background color for contrast */
+      color: #333; /* Default text color */
+    }
 
+    /* Container for the slideshow at the top */
+    .slideshow {
+      position: relative; /* Positioning context for absolutely positioned children if needed */
+      width: 100%; /* Full width of the viewport */
+      max-height: 400px; /* Limit height for the slideshow */
+      overflow: hidden; /* Hide overflowing images to create a clean slide effect */
+    }
 
+    /* Container holding all slides side by side */
+    .slides {
+      display: flex; /* Arrange slides in a row */
+      transition: transform 1s ease-in-out; /* Animate slide transitions smoothly */
+    }
 
+    /* Individual slide styling */
+    .slide {
+      min-width: 100%; /* Each slide takes full width of the container */
+      height: 400px; /* Fixed height matching the slideshow container */
+      background-size: cover; /* Cover entire slide area with background image */
+      background-position: center; /* Center the background image */
+    }
 
+    /* Styles for the header section */
+    header {
+      background-color: #333; /* Dark background for contrast */
+      color: #fff; /* White text for readability */
+      padding: 20px 0; /* Vertical padding */
+      text-align: center; /* Centered text */
+    }
+
+    /* Styles for content sections */
+    section {
+      max-width: 900px; /* Limit width for readability */
+      margin: 20px auto; /* Center sections horizontally with margin */
+      padding: 0 20px; /* Horizontal padding inside sections */
+    }
+
+    /* Heading styles */
+    h1, h2 {
+      margin-top: 0; /* Remove default top margin for headings */
+    }
+
+    /* Contact info styling */
+    .contact-info {
+      margin-top: 10px; /* Spacing above contact info */
+    }
+
+    /* Styling for each section box */
+    .section {
+      background: #fff; /* White background for contrast */
+      padding: 20px; /* Inner padding */
+      margin-bottom: 20px; /* Space below each section */
+      border-radius: 8px; /* Rounded corners for a softer look */
+    }
+
+    /* Remove default list styles for lists */
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    /* Spacing between list items */
+    li {
+      margin-bottom: 10px;
+    }
+
+    /* Styling for links */
+    a {
+      color: #333; /* Match text color for consistency */
+      text-decoration: none; /* Remove underline by default */
+    }
+
+    /* Hover effect for links */
+    a:hover {
+      text-decoration: underline; /* Underline on hover for interactivity */
+    }
+  </style>
 </head>
+<body>
+  <!-- Slideshow container at the top of the page -->
+  <div class="slideshow">
+    <!-- Inner container holding all slides side by side -->
+    <div class="slides" id="slides">
+      <!-- Each slide with a background image -->
+      <div class="slide" style="background-image: url('https://source.unsplash.com/1600x400/?nature,water');"></div>
+      <div class="slide" style="background-image: url('https://source.unsplash.com/1600x400/?mountains');"></div>
+      <div class="slide" style="background-image: url('https://source.unsplash.com/1600x400/?city');"></div>
+    </div>
+  </div>
 
-<div class="wrapper">
+  <!-- Header section with name and contact info -->
+  <header>
+    <h1>Your Name</h1>
+    <div class="contact-info">
+      <p>
+        Email: your.email@example.com | Phone: (123) 456-7890 | 
+        <a href="https://github.com/yourusername" target="_blank">GitHub</a> | 
+        <a href="https://linkedin.com/in/yourprofile" target="_blank">LinkedIn</a>
+      </p>
+    </div>
+  </header>
 
-    <body class="body">
+  <!-- Now, the sections are reordered as per your request -->
 
-        <img class="banner-cnp" src="images/68423710_10161925125005251_964762217184493568_o.jpg">
-        <h1>Matt Hamer - Entomologist</h1>
-        <p>PhD student at <a href="https://benoitguenard.wordpress.com/"> Insect Biodiversity
-                and Biogeography Laboratory</a>, The University of Hong Kong</p>
-        <hr>
-        </hr>
-        <h2>About Me</h2>
-        <p class="social-media">
-            <b>Email</b> - matt.hamer AT hotmail.co.uk <br>
-            <a href="https://scholar.google.co.uk/citations?hl=en&user=hczqnz8AAAAJ&view_op=list_works&gmla=AFix5MbElTmRrn29_fdOWLkQc4MYug8F430PYgviniSDpSa0v6hG-DKh00irg1fXuqmo6CiqjdWm53gwboK762bA">Google Scholar</a><br>
-            <a href="https://www.researchgate.net/profile/Matthew-Hamer-3">ResearchGate</a><br>
-            <a href="https://bsky.app/profile/entohamer.bsky.social">BlueSky</a><br>
-        </p>
-        <p class="aboutme-text">I am an entomological researcher, with a particular interest in myrmecology,
-            alongside insect diversity, faunistics, as well as taxonomy and evolution. Currently based at the
-            University of Hong Kong as a PhD student within the Insect Biodiversity and Biogeography Laboratory.<br>
-        </p>
-        <hr>
-        </hr>
-        <h2>Education, Work, Editorial Positions</h2>
-        <h3>Education</h3>
-        <ul style="line-height: 1.5;">
-            <li>PhD student. The Univeristy of Hong Kong, Insect Biodiversity and Biogeography Laboratory<br>
-                Supervisor: Prof. Benoit Guénard</li>
-            <li>Taxonomy, Biodiversity & Evolution MSc. Imperial College London & Natural History Museum London <br>
-                Dissertation Supervisors: Dr. Thomas Creedy & Prof. Alfried Vogler</li>
-            <li>Zoology BSc. Bangor University. <br>
-                Hons Dissertation Supervisor: Dr. Alison Cameron</li>
-        </ul>
-        <h3>Work</h3>
-        <ul style="line-height: 1.5;">
-            <li>Research Assisstant: The University of Hong Kong, IBBL. 2021-2024
-            </li>
-            <li>Expedition Entomologist: Operation Wallacea LTD. Cusuco National Park, Honduras. June 2019 – August 2019
-            </li>
-            <li>Entomology Curation: Bangor Univeristy (part time). 2018 September - June 2019
-            </li>
-            <li>Intern: Madagascan Biodiversity Center. August 2018 – September 2018
-            </li>
-        </ul>
-        <h3>Editorial Positions</h3>
-        <ul style="line-height: 1.5;">
-            <li>Handling Editor: Asian Myrmecology; 2026 -
-            </li>
-        </ul>
-        <hr>
-        </hr>
-        <h2>Publications</h2>
-        <h3>Indexed publications</h3>
-        <ol reversed style="line-height: 1.5;">
-            <!---Schifani, E., Blaya, R., Blight, O., Cato, S., Corbella C., <b>Hamer., MT</b>., Luakaityte, S., Rossi, F., Turner, CR., Veljaca, K., Vila, R., Menchetti, M. XXXX. Needle ants on the move in Europe: Brachyponera chinensis in Croatia, France, and Italy, and B. flavipes in the United Kingdom. Biogeographia-->
-            <!---<li>Rocha FP., <b>Hamer, MT</b>., Guénard, B. XXXX Context-Dependent Impacts of Multitrophic Invasions: Invasive Ants Mediate Predatory Impacts on Native Biodiversity. Ecosphere. </li>-->
-            <!---<li>Rocha FP., <b>Hamer, MT</b>., Guénard, B. XXXX Species-specific effects of invasive ants on carrion decomposition in the subtropics. Ecosphere.</li>-->
-            <li>Chan, M., <b>Hamer, MT</b>., Guénard, B. 2026. A new species complex in the genus <i>Camponotus</i> Mayr, 1861 (Hymenoptera: Formicidae), with the description of a new species. Contributions To Entomology. 76(1): 139-158. <a href = https://contributions-to-entomology.arphahub.com/article/189240/list/8/> doi: 10.3897/contrib.entomol.76.e189240</a></li>
-            <li>Arcos, J., López-Collar, D., Menchetti, M., <b>Hamer, MT</b>., Logachev, M., Pinto, T., Rosado, Á. 2026. Non-native ants of the Iberian Peninsula: a 2025 update. Sociobiology. 73(1): e11981. <a href = https://periodicos.uefs.br/index.php/sociobiology/article/view/11981> doi.org/10.13102/sociobiology.v73i2.11981</a></li>
-            <li>Baptista, M., Keller, RA., <b>Hamer, MT</b>., Guénard, B., Hita-Garcia, F. 2026. Breaking the Monotypy: Insights into an Enigmatic Ant Genus with the Discovery of <i>Ishakidris hastifera</i> sp. nov. in Peninsular Malaysia. Journal of Hymenoptera Research. 99: 101-124 <a href="https://jhr.pensoft.net/article/166509/"> doi: 10.3897/jhr.99.166509</a></li>
-            <li><b>Hamer, MT</b>., Katzke J., Tang, KL., Weemaels AI., Hita-Garcia, F., Economo EP., Guénard B. 2025. A revision of the rare <i>Strumigenys mnemosyne</i> (Formicidae; Myrmicinae) group using micro-CT scanning, with the description of three new species, and the virtual repair of a broken paratype. PLoS ONE. 20(9): e0331762.<a href=https://doi.org/10.1371/journal.pone.0331762> doi.org/10.1371/journal.pone.0331762</a></li></li>
-            <li>Hu, J., Bogar, T., <b>Hamer, MT</b>., Guénard, B. 2025. Impacts of single and multiple co-existing invasive species on subtropical native ant communities. Ecology and Evolution. 2025; 15:e72095 <a href= https://onlinelibrary.wiley.com/doi/10.1002/ece3.72095> https://doi.org/10.1002/ece3.72095</a></li>
-            <li><b>Hamer, MT</b>., Lee, RH., Wang, L-W., Davies, K., Chan, M., Fellowes, JR,. Guénard B. 2025. A Checklist of Ants (Hymenoptera: Formicidae) of Hainan Province, China. Asian Myrmecology. 18: 018006 (1-123) <a href=http://www.asian-myrmecology.org/doi/10.20362/am.018006.html> DOI: 10.20362/am.018006</a></li>
-            <li><b>Hamer, MT</b>., Gomez, K., Jocque, M. 2025. A New <i>Xymmer</i> Santschi, 1914 (Formicidae: Amblyoponinae) Species from the Congo Basin, with Male and Female Descriptions of <i>X. muticus</i> (Santschi, 1914). Zootaxa. 5647 (5), 479-495. <a href=https://www.mapress.com/zt/article/view/zootaxa.5647.5.7> doi.org/10.11646/zootaxa.5647.5.7</a></li>
-            <li>Wint, FDC., Oorts, D., Branstetter, MG., Graaf, DD., Dekoninck, W., Jocque, M., Martin, TE., Sudworth, J., Osselaer, RV., <b>Hamer, MT</b>. 2024. Ants in the clouds: A preliminary checklist of the ant (Hymenoptera: Formicidae) fauna of a Honduran cloud forest ecosystem, featuring a key to country genera (Cusuco National Park, Honduras). Neotropical Biology and Conservation. 19(2): 107-135 <a href= https://neotropical.pensoft.net/article/119775/list/8/ > doi: 10.3897/neotropical.19.e119775</a></li>
-            <li><b>Hamer, MT</b>., Weemaels, AI., Fu Y., Xuan, K., Tse, CYL., Tang, KL., Guénard, B. 2024. New insights into the Leptanillinae (Formicidae) diversity and distribution within China. Zootaxa. 5471(1):99-112.<a href= https://mapress.com/zt/article/view/zootaxa.5471.1.6> DOI: 10.11646/ZOOTAXA.5471.1.6</a></li>          
-            <li><b>Hamer, MT</b>., Lee, JHC., Tse, CYL., Silva, TSR., Guénard, B. 2024. The <i>Leptogenys</i> Roger, 1861 (Formicidae, Ponerinae) of Hong Kong SAR with new additions to Guangdong province, China. ZooKeys. 1202: 169-211 <a href= https://doi.org/10.3897/zookeys.1202.120214> doi: 10.3897/zookeys.1202.120214</a></li>
-            <li><b>Hamer, MT</b>., Turner, CR. 2024. <i>Solenopsis abdita</i> Thompson, 1989 (Formicidae; Myrmicinae) New to Britain. The Entomologist Monthly Magazine. 160(2): 144-150 <a href= https://doi.org/10.31184/M00138908.1602.4231>doi: 10.31184/M00138908.1602.4231</a></li>
-            <li><b>Hamer, MT</b>., Turner, CR. 2024. <i>Strumigenys emmae</i> (Emery, 1890) (Myrmicinae) New to Britain, with an Updated Key to the Known <i>Strumigenys</i> of Europe. Zootaxa. 5415(4): 570-576
-                <a href= https://www.mapress.com/zt/article/view/zootaxa.5415.4.6>doi: 10.11646/ZooTaxa.5415.4.6</a></li>
-            <li>Leung, TKC., Leong, CM., <b>Hamer, MT</b>., Guénard, B. 2023. Discovery of the formerly Japan-endemic <i>Ponera kohmoku</i> Terayama, 1996 (Formicidae, Ponerinae) in Southeast China. Asian Myrmecology. 16(016008): 1-11. <a
-                href= http://www.asian-myrmecology.org/doi/10.20362/am.016008.html>doi: 10.20362/am.016008</a>
-            </li>
-            <li>Silva, TSR., <b>Hamer, MT</b>., Guénard, B. 2023. Erratum. A checklist of <i>Nylanderia</i> (Hymenoptera: Formicidae: Formicinae) from Hong Kong and Macao SARs, with an illustrated identification key for species in Southeast China and Taiwan. Zootaxa 5343(6): 599-600.<a
-                href= https://mapress.com/zt/article/view/zootaxa.5343.6.6>doi: 10.11646/ZooTaxa.5343.6.6</a></li>
-            <li><b>Hamer, MT</b>., Lee, RH., Guénard, B. 2023. First record of the genus <i>Temnothorax</i> Mayr, 1861 (Formicidae: Myrmicinae) in Hong Kong, with descriptions of two new species. European Journal of Taxonomy. 879(1): 116-135.
-                <a href= https://europeanjournaloftaxonomy.eu/index.php/ejt/article/view/2165>doi.org/10.5852/ejt.2023.879.2165</a></li>
-            </li>
-            <li>Silva, TSR., <b>Hamer, MT</b>., Guénard, B. 2023. A checklist of <i>Nylanderia</i> (Hymenoptera: Formicidae: Formicinae) from Hong Kong and Macao SARs, with an illustrated identification key for species in Southeast China and Taiwan. Zootaxa. 5301(5): 501-539.<a
-                href= https://mapress.com/zt/article/view/zootaxa.5301.5.1>doi: 10.11646/ZooTaxa.5301.5.1</a></li>
-            <li><b>Hamer, MT</b>., Pierce, MP., Guénard, B. The Amblyoponinae of Hong Kong. 2023. Asian Myrmecology. 16(e016005): 1-37. <a
-                href=http://www.asian-myrmecology.org/doi/10.20362/am.016005.html>doi:10.1111/jbi.14546</a></li>
-            <li>Wang R., Kass JM., Galkowski, C., Garcia F., <b>Hamer, MT</b>., Radchenko, A., Salata, S., Schifani, E,
-                Yusupov, ZM., Economo, EP., Guénard, B. 2023. New distribution data and phylogenetic approach reveal
-                bioregionalization of the western Palearctic ants. Journal of Biogeography. 50: 503-514. <a
-                    href= https://doi.org/10.1111/jbi.14546>doi: 10.1111/jbi.14546</a></li>
-            <li>Finch, EA., Rajoelison ET., <b>Hamer, MT</b>., Caruso, T., Farnsworth, KD., Fisher, BL., Cameron, A. 2022. The
-                effect of
-                swidden agriculture on ant communities in Madagascar. Biological Conservation. 265. <a
-                    href= https://doi.org/10.1016/j.biocon.2021.109400>doi.org/10.1016/j.biocon.2021.109400</a></li>
-            <li><b>Hamer, MT</b>., Marquis, A., Guénard, B. 2021. <i>Strumigenys perplexa</i> (Smith 1876) (Formicidae: Myrmicinae) a new
-                exotic ant to Europe with establishment in Guernsey, Channel Islands. Journal of Hymenoptera
-                Research. 83: 101-124. <a href="https://doi.org/10.3897/jhr.83.66829"> doi:10.3897/jhr.83.66829</a></li>
-        </ol>
-        <h3>Non-indexed publications</h3>
-        <ol reversed style="line-height: 1.5;">
-            <li><b>Hamer, MT</b>., Telfer, MG., Turner, CR. 2023. Rediscovered after 102 years: <i>Strumigenys rogeri</i> Emery, 1890 (Formicidae; Myrmicinae) is rediscovered in Britain from the Eden Project, East Cornwall (VC 2)
-                British Journal of Entomology & Natural History. 36(4): 225-232.</li>
-            <li><b>Hamer, MT</b>., Northfield, A. 2023. Two new non-native Mediterranean ant species to Britain collected from cork bark.
-                    British Journal of Entomology & Natural History. 36 (3): 199-204 </li>
-            <li><b>Hamer, MT</b>., Attewell, P. 2022. <i>Ponera testacea</i>, Emery 1895, (Hym.: Formicidae) in a suburban
-                garden in coastal East Sussex (VC14), with a description of nest location.
-                British Journal of Entomology & Natural History. 36: 1-7</li>
-            <li><b>Hamer, MT</b>. 2021. A new site for <i>Claviger testaceous</i> (Preyssler) (Staphylinidae; Pselaphinae) in
-                East Sussex (VC 14) with a review of modern and historical records. The Coleopterist. 30(3): 129-130</li>
-            <li><b>Hamer, MT</b>. 2021. A newly recorded exotic ant <i>Pheidole punctatissima</i> Mayr (Hymenoptera:
-                Formicidae) to
-                Britain. British Journal of Entomology & Natural History (Short Communication). 34(3):221-223. <a
-                    href="https://www.researchgate.net/publication/353324455_Short_Communication_A_newly_recorded_exotic_ant_Pheidole_punctatissima_Mayr_Hymenoptera_Formicidae_to_Britain">Link</a>
-            </li>
-            <li><b>Hamer, MT</b>. 2021. New Records of <i>Stenamma debile</i> (Formicidae; Myrmicinae) in East Sussex
-                (Vice-County 14). Bees, Wasps and Ants Recording Society Spring Newsletter</li>
-            <li><b>Hamer, MT</b>., Cocks, L. 2020. <i>Linepithema iniquum</i> (Mayr) (Hymenoptera: Formicidae) Found at the                National
-                Botanic
-                Garden of Wales. British Journal of Entomology & Natural History. 33:71-75. <a
-                    href="https://www.researchgate.net/publication/340166113_Linepithema_iniquum_Mayr_Hymenoptera_Formicidae_Found_at_the_National_Botanic_Garden_of_Wales">Link</a>
-            </li>
-            <li><b>Hamer, MT</b>. 2020. First Record of <i>Myrmica lobicornis</i> from Anglesey, Wales (Vice-County 52).
-                Bees,
-                Wasps
-                and Ants Recording Society Spring Newsletter.</li>
-            </ol>
-        <h3>Reports</h3>
-        <ol reversed style="line-height: 1.5;">
-        <li><b>Hamer, MT</b> 4.3 Formicidae in Berkel, T et al., 2025. Biodiversity Express Survey (BES) 12.1
-            The Mekong Biodiversity Project: A biological assessment of Sambour and Prek Prasab Wildlife
-            Sanctuary in Kratie Province, Cambodia 
-        <a href="https://binco.eu/wp-content/uploads/2025/01/BES-12.1-Cambodia-2023.pdf">Link</a></li>        
-        <li><b>Hamer, MT</b> 2.6 Formicidae in Jocqué, M et al., 2023. Biodiversity Express Survey (BES) 11.1 The Salonga NP expedition: a rapid biodiversity assessment in the largest forest reserve in Africa, DRC. 
-        <a href="https://binco.eu/wp-content/uploads/2023/12/BES-11.1-Salonga-2022.pdf">Link</a></li>
-        </ol>
-        
-        <hr>
-        <h2>Talks</h2>
-        <ol reversed style="line-height: 1.5;">
-            <li>Diversity & Responses of Asian Ants Along Latitudinal & Disturbance Gradients: a 1000 Plots Story. Guangdong-Hong Kong-Macao Entomology Conference, Zhuhai, China. 2026
-</li>
-            <li>
-             Diversity & Responses of Asian Ants Along Latitudinal & Disturbance Gradients: a 1000 Plots Story. Asian Myrmecology Network Meeting. Northwest A&F University, Yangling, Shaanxi, China. 2025
-            </li>
-            <li>The Ants of Hong Kong - Current Taxonomic Efforts. Asian Myrmecology Network Meeting. Kota Kinabula. 2023 </li>
-            <li>From Field to Pin - A guide to preparing ant specimens for point mounting.
-                Bees, Wasps and Ants Recording Society AGM 2021
-            </li>
-            <li>The Peculiar Natural History of the Iniquiline Ant <i>Tetramorium atratulum</i>.
-                British Entomology and Natural History Society 'Entomological Opportunities 2018'
-            </li>
-        </ol>
-        </hr>
-        <h2>Photography</h2>
-        <p>Alongside research, I am an avid macro photographer with a particular interest capturing biodiversity through
-            my lens - both my research and photography are therefore often intertwined. I publish all my photographs
-            formally onto
-            flickr. <br>
-            I do charge for the use of my photographs depending on their use - please get in touch via my email
-            address above.</p>
-        <h3>Where my photographs have been used</h3>
-        <ul style="line-height: 1.5;">
-            <li><a href="https://www.flickr.com/photos/157748979@N03/49548660441/in/album-72157717551306016/">An example
-                    of Pseudoscorpion phoresy</a> within <a href="
-                https://twitter.com/LincsWildlife/status/1333714412406976512/photo/1">Lapwings</a> - Jim Shaw.
-                Lancashire Wildlife Trust Magazine Winter 2000
-            </li>
-            <li><a href="https://www.flickr.com/photos/157748979@N03/51222342786/in/dateposted/"><i>Lasius
-                        flavus</i></a> photo within <a href="
-                https://www.nhbs.com/the-bees-wasps-and-ants-of-lancashire-book"> The Bees, Wasps and Ants of
-                    Lancashire</a> - Ben Hargreaves & Steve White. Lancashire and Cheshire Fauna Society
-            </li>
-            <li><a href="https://www.flickr.com/photos/157748979@N03/49890495062/in/album-72157714277459646/"><i>Tetramorium
-                        caespitum</i></a> photo within <a href="
-                    https://www.bloomsbury.com/uk/ants-9781472964892/">Ants</a> - Richard Jones. Bloomsbury Publishing
-            </li>
-            <li><a href="https://www.flickr.com/photos/157748979@N03/36436197976/in/album-72157684892788653/"><i>Stenorrhina
-                        degenhardtii</i></a> in the supplementary material of Akcali et al 2019 <a
-                    href="https://royalsocietypublishing.org/doi/10.1098/rspb.2019.1519">'Multiple models generate a
-                    geographical mosaic of resemblance in a Batesian mimicry complex'</a> Royal Society B</li>
-        </ul>
-        <h3>Photography Awards</h3>
-        <ul style="line-height: 1.5;">
-            <li>One of 12 selected for in Sussex Wildlife Trust photography competition <a
-                    href="https://sussexwildlifetrust.org.uk/news/kingfisher-confrontation-wins-sussex-wildlife-trusts-photo-competition">2020</a>
-            </li>
-            <li>Short Listed in the Luminar Bug Photography Awards 2020. For<a
-                    href="https://www.photocrowd.com/photos/robber-fly-with-beetle-prey-4316353.657ef0e2a/">
-                    Robberfly</a>
-                within the <a
-                    href="https://www.photocrowd.com/photo-competitions/flies-bees-wasps-and-dragonflies-macro-photo-contest-8925/overview/"><i>Flies,
-                        Bees, Wasps and Dragonflies</i></a> category</li>
+  <!-- About Me section -->
+  <section class="section">
+    <h2>About Me</h2>
+    <p>A brief summary about yourself, your passions, and what you're looking for.</p>
+  </section>
 
-        </ul>
-        <hr>
-        </hr>
-      </body>
-</div>
+  <!-- Education section -->
+  <section class="section">
+    <h2>Education</h2>
+    <h3>Degree at Institution</h3>
+    <p><em>Graduation Year</em></p>
+  </section>
 
+  <!-- Experience section -->
+  <section class="section">
+    <h2>Experience</h2>
+    <h3>Job Title at Company</h3>
+    <p><em>Dates of employment</em></p>
+    <p>Description of your responsibilities and achievements.</p>
+  </section>
+
+  <!-- Research section -->
+  <section class="section">
+    <h2>Research</h2>
+    <p>Details about your research projects, publications, or interests.</p>
+  </section>
+
+  <!-- Projects section (optional, you can add if needed) -->
+  <section class="section">
+    <h2>Projects</h2>
+    <ul>
+      <li><a href="https://github.com/yourproject" target="_blank">Project Name</a> - brief description</li>
+      <!-- Add more projects as needed -->
+    </ul>
+  </section>
+
+  <!-- JavaScript for automatic slideshow -->
+  <script>
+    // Select the container holding all slides
+    const slides = document.getElementById('slides');
+    // Count how many slides there are
+    const totalSlides = slides.children.length;
+    // Initialize current slide index
+    let index = 0;
+
+    // Function to show the next slide
+    function showNextSlide() {
+      // Increment index and wrap around if needed
+      index = (index + 1) % totalSlides;
+      // Move the slides container to show the current slide
+      slides.style.transform = `translateX(-${index * 100}%)`;
+    }
+
+    // Set an interval to automatically change slides every 3 seconds
+    setInterval(showNextSlide, 3000);
+  </script>
+</body>
 </html>
