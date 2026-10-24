@@ -19,7 +19,7 @@
     .slideshow {
       position: relative; /* Positioning context for absolutely positioned children if needed */
       width: 100%; /* Full width of the viewport */
-      max-height: 400px; /* Limit height for the slideshow */
+      max-height: 1000px; /* Limit height for the slideshow */
       overflow: hidden; /* Hide overflowing images to create a clean slide effect */
     }
 
@@ -43,6 +43,10 @@
       color: #fff; /* White text for readability */
       padding: 20px 0; /* Vertical padding */
       text-align: center; /* Centered text */
+    }
+    
+    header a {
+      color: #fff;
     }
 
     header p {
@@ -92,25 +96,44 @@
   </style>
 </head>
 <body>
+  
   <!-- Slideshow container at the top of the page -->
-  <div class="slideshow">
-    <!-- Inner container holding all slides side by side -->
-    <div class="slides" id="slides">
-      <!-- Each slide with a background image -->
-      <div class="slide" style="background-image: url('images/ant_1.jpg');"></div>
-      <div class="slide" style="background-image: url('images/forest_1.jpg');"></div>
-      <div class="slide" style="background-image: url('images/forest_2.jpg');"></div>
-      <div class="slide" style="background-image: url('images/me_1.jpg');"></div>
-      <div class="slide" style="background-image: url('images/forest_3.jpg');"></div>
-      <div class="slide" style="background-image: url('images/forest_4.jpg');"></div>
-      <div class="slide" style="background-image: url('images/forest_5.jpg');"></div>
-      <div class="slide" style="background-image: url('images/ant_3.jpg');"></div>
-      <div class="slide" style="background-image: url('images/forest_6.jpg');"></div>
-      <div class="slide" style="background-image: url('images/winklers_1.jpg');"></div>
-      <div class="slide" style="background-image: url('images/forest_7.jpg');"></div>
-
+<div class="slideshow">
+  <!-- Inner container holding all slides side by side -->
+  <div class="slides" id="slides">
+    <!-- Each slide with an image -->
+    <div class="slide">
+      <img src="images/ant_1.jpg" alt="Ant Image" />
+    </div>
+    <div class="slide">
+      <img src="images/forest_1.jpg" alt="Forest 1" />
+    </div>
+    <div class="slide">
+      <img src="images/forest_2.jpg" alt="Forest 2" />
+    </div>
+    <div class="slide">
+      <img src="images/me_1.jpg" alt="Me" />
+    </div>
+    <div class="slide">
+      <img src="images/forest_3.jpg" alt="Forest 3" />
+    </div>
+    <div class="slide">
+      <img src="images/forest_4.jpg" alt="Forest 4" />
+    </div>
+    <div class="slide">
+      <img src="images/forest_5.jpg" alt="Forest 5" />
+    </div>
+    <div class="slide">
+      <img src="images/forest_6.jpg" alt="Forest 6" />
+    </div>
+    <div class="slide">
+      <img src="images/winklers_1.jpg" alt="Winklers" />
+    </div>
+    <div class="slide">
+      <img src="images/forest_7.jpg" alt="Forest 7" />
     </div>
   </div>
+</div>
 
   <!-- Header section with name and contact info -->
   <header>
