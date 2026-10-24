@@ -23,5 +23,5 @@
   height: 100%;
   object-fit: contain; /* changed from cover to contain */
   display: block;
-  /* object-position: center; */ /* optional */
+   object-position: center;  /* optional */
 }
