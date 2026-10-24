@@ -15,27 +15,19 @@
       color: #333; /* Default text color */
     }
 
-    /* Container for the slideshow at the top */
-    .slideshow {
-      position: relative; /* Positioning context for absolutely positioned children if needed */
-      width: 100%; /* Full width of the viewport */
-      max-height: 1000px; /* Limit height for the slideshow */
-      overflow: hidden; /* Hide overflowing images to create a clean slide effect */
-    }
+  /* Header image at the top */
+  .header-image {
+    width: 100%;
+    height: 400px; /* adjust height as needed */
+    overflow: hidden;
+  }
 
-    /* Container holding all slides side by side */
-    .slides {
-      display: flex; /* Arrange slides in a row */
-      transition: transform 1s ease-in-out; /* Animate slide transitions smoothly */
-    }
-
-    /* Individual slide styling */
-    .slide {
-      min-width: 100%; /* Each slide takes full width of the container */
-      height: 800px; /* Fixed height matching the slideshow container */
-      background-size: contain; /* Cover entire slide area with background image */
-      background-position: center; /* Center the background image */
-    }
+  .header-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* fill the container without distortion */
+    display: block;
+  }
 
     /* Styles for the header section */
     header {
@@ -97,42 +89,8 @@
 </head>
 <body>
   
-  <!-- Slideshow container at the top of the page -->
-<div class="slideshow">
-  <!-- Inner container holding all slides side by side -->
-  <div class="slides" id="slides">
-    <!-- Each slide with an image -->
-    <div class="slide">
-      <img src="images/ant_1.jpg" alt="Ant Image" />
-    </div>
-    <div class="slide">
-      <img src="images/forest_1.jpg" alt="Forest 1" />
-    </div>
-    <div class="slide">
-      <img src="images/forest_2.jpg" alt="Forest 2" />
-    </div>
-    <div class="slide">
-      <img src="images/me_1.jpg" alt="Me" />
-    </div>
-    <div class="slide">
-      <img src="images/forest_3.jpg" alt="Forest 3" />
-    </div>
-    <div class="slide">
-      <img src="images/forest_4.jpg" alt="Forest 4" />
-    </div>
-    <div class="slide">
-      <img src="images/forest_5.jpg" alt="Forest 5" />
-    </div>
-    <div class="slide">
-      <img src="images/forest_6.jpg" alt="Forest 6" />
-    </div>
-    <div class="slide">
-      <img src="images/winklers_1.jpg" alt="Winklers" />
-    </div>
-    <div class="slide">
-      <img src="images/forest_7.jpg" alt="Forest 7" />
-    </div>
-  </div>
+<div class="header-image">
+  <img src="images/ant_2.jpg" alt="Ant Header Image" />
 </div>
 
   <!-- Header section with name and contact info -->
@@ -291,25 +249,5 @@
     </ul>
   </section>
 
-  <!-- JavaScript for automatic slideshow -->
-  <script>
-    // Select the container holding all slides
-    const slides = document.getElementById('slides');
-    // Count how many slides there are
-    const totalSlides = slides.children.length;
-    // Initialize current slide index
-    let index = 0;
-
-    // Function to show the next slide
-    function showNextSlide() {
-      // Increment index and wrap around if needed
-      index = (index + 1) % totalSlides;
-      // Move the slides container to show the current slide
-      slides.style.transform = `translateX(-${index * 100}%)`;
-    }
-
-    // Set an interval to automatically change slides every 3 seconds
-    setInterval(showNextSlide, 1000);
-  </script>
 </body>
 </html>

@@ -3,25 +3,70 @@
   color: #fff;
 }
 
-/* Container for all slides side by side */
-.slides {
-  display: flex;
-  transition: transform 1s ease-in-out;
+/* Override link color inside header or contact-info */
+.contact-info a {
+  color: #fff;
 }
 
-/* Each slide styling */
-.slide {
-  min-width: 100%;
-  height: 600px; /* increase height for better fit */
+/* Container for the header image at the top */
+.header-image {
+  width: 100%;
+  height: 600px; /* adjust height as needed */
   overflow: hidden;
-  position: relative;
 }
 
-/* Style for images inside slides */
-.slide img {
+/* Style for the header image to fill container without distortion */
+.header-image img {
   width: 100%;
   height: 100%;
-  object-fit: contain; /* changed from cover to contain */
+  object-fit: cover; /* fill container, cropping if necessary */
   display: block;
-   object-position: center;  /* optional */
+}
+
+/* Styles for the header section */
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+}
+
+/* Styles for content sections */
+section {
+  max-width: 900px;
+  margin: 20px auto;
+  padding: 0 20px;
+}
+
+/* Headings */
+h1, h2 {
+  margin-top: 0;
+}
+
+/* Contact info styling */
+.contact-info {
+  margin-top: 10px;
+}
+
+/* Styling for each section box */
+.section {
+  background: #fff;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+}
+
+/* Lists styling */
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 10px;
+}
+
+/* Link hover style */
+a:hover {
+  text-decoration: underline;
 }
